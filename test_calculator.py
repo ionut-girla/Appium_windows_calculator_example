@@ -52,7 +52,6 @@ def calc():
 
 def test_subtract(calc):
     # Act
-    calc = calc()
     button_list  = ["Seven", "Seven", "Minus", "One", "Zero", "Zero", "Equals"]
     for button in button_list:
         calc.driver.find_element_by_name(button).click()
@@ -64,7 +63,6 @@ def test_subtract(calc):
 
 def test_addition(calc):
     # Act
-    calc = calc()
     calc.driver.find_element_by_name("One").click()
     calc.driver.find_element_by_name("Plus").click()
     calc.driver.find_element_by_name("Seven").click()
